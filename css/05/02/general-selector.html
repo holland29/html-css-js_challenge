@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>general-selector</title>
+  <!-- 
+    일반적인 형제관계
+    - 이전 선택자 뒷순서의 형제 요소
+    -> 모두 선택자로 지정함
+    - 2개 이상의 선택자 사용
+    - 선택자 간의 구분 기호: ~(물결)
+  -->
+
+  <style>
+    h1 ~ h2 {
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <h1>lorem</h1>
+  <h2>lorem</h2>
+  <h2>lorem</h2>
+</body>
+</html>

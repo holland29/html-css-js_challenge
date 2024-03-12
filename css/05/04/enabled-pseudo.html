@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>enabled-pseudo</title>
+  <!-- 
+    ! :enabled 
+    - :disabled 선택자와 정반대
+    - 상호작용 요소를 활성화, 스타일 적용
+  -->
+  <style>
+    input:enabled {
+      color: orange;
+    }
+    button:enabled {
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <input type="text"> <br>
+  <button type="button">e-btn</button>
+  <button type="button" disabled>d-btn</button>
+</body>
+</html>

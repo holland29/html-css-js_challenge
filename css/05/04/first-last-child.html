@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first-last-child</title>
+  <!-- 
+    ! 구조적 가상 클래스 선택자
+    - html tag의 사용 위치
+    &
+    - 다른 태그와의 관계에 따라 요소를 선택하는 방법
+  -->
+  <style>
+    li:first-child {
+      color: yellow;
+    }
+    li:last-child {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <img 
+    src="./구조적-가상클래스-선택자-01.png" 
+    alt="" 
+    width="90%">
+  <img 
+    src="./구조적-가상클래스-선택자-02.png" 
+    alt="">
+  
+  <br><hr>
+
+  <ul>
+    <li>lorem1</li>
+    <li>lorem2</li>
+    <li>lorem3</li>
+    <li>lorem4</li>
+  </ul>
+</body>
+</html>

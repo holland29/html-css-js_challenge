@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth-of-type</title>
+  <!-- 
+    ! nth-of-type
+    - 부모의 자식 중, n번째 등장하는 e요소 선택
+    - 부모의 자식 중, 끝에서 e요소를 탐색함
+      => :nth-last-of-type(n)도 동일함
+    
+  -->
+  <style>
+    p:nth-of-type(2) {
+      color: darkslateblue;
+    }
+  </style>
+</head>
+<body>
+  <p>lorem 0</p>
+  <div>
+    <p>lorem1</p>
+    <span>span1</span>
+    <p>lorem2</p><!--  -->
+  </div>
+  <div>
+    <p>lorem3</p>
+    <span>span2</span>
+    <span>span3</span>
+    <p>lorem4</p><!--  -->
+  </div>
+</body>
+</html>

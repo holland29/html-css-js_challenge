@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>desent-selector</title>
+  <!-- 
+    하위 선택자
+    - 선택자의 범위를 한정: 특정 부모의 하위 요소
+    - 2개 이상의 선택자 사용
+    - 선택자 간의 사이 구분: 공백
+  -->
+  <style>
+    div p {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!--  -->
+  <div>
+    <p>Lorem Ipsum1</p> <!-- div(조상)의 p태그(후손) 적용 -->
+    <ul>
+      <li>
+        <p>Lorem Ipsum2</p>
+      </li> <!-- div(조상)의 p태그(후손) 적용 -->
+      <li>
+        <p>Lorem Ipsum3</p>
+      </li> <!-- div(조상)의 p태그(후손) 적용 -->
+    </ul>
+  </div>
+  <p>Lorem Ipsum4</p> <!-- 부모 없음 적용대상x -->
+</body>
+</html>

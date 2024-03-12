@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>adjacent-sibling</title>
+  <!--
+    인접 형제 선택자
+    - 앞에서 지정한 선택자 "바로 다음의 형제 관계 요소를 택함"
+    - 2개 이상 선택자 사용
+    - 선택자 간의 구분 기호: +(플러스)
+    !! 주의점
+    - 인접형제 선택자: 이전 요소 다음에 등장하는 형제 요소를 선택
+  -->
+  <style>
+    /* h1 + h2 {
+      color: blue;
+    } */
+
+    h1 + h2 {
+      color: palevioletred;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  </h1>
+  <h2>
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+  </h2>
+  <h3>
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </h3>
+
+
+  <br><hr>
+
+  <h2>prev</h2>
+  <h1>former</h1>
+  <h2>next</h2> <!-- h1 태그 "바로 다음의" 마지막 h2 태그 적용 -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>attribute_selector-활용하기</title>
+  <style>
+    [class="red"] {
+      color: red;
+    }
+    
+    a[target="_blank"] {
+      color: yellow;
+    }
+
+    /* 속성 선택자는 혼용 가능하다 */
+
+    /* a 태그 선택자 
+    [href 속성 선택자]{} */
+
+    /* #title[href]{}
+    id속성값 title, href속성의 요소 택 */
+
+    /* .title[href]{}
+    class속성갓 title, href속성의 요소 택 */
+
+    /* [href]{}
+    어떤 요소라도 href 속성만 있으면 선택 가능 */
+
+  </style>
+</head>
+<body>
+  <a href="#" class="red">
+    class 속성값이 red인 요소 택
+  </a>
+  <a href="#" id="title" target="_blank">
+    새 창으로 열리는 노란색 a태그
+  </a>
+
+  <img style="width: 80%;" 
+  src="./문자열_속성_선택자_형식.png" 
+  alt="문자열_속성_선택자_형식.png">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth-last-child</title>
+  <!-- 
+    ! nth-last-child
+    - 선택자를 찾는 기준?
+      - 부모 요소의 끝에서부터!
+  -->
+  <style>
+    p:nth-last-child(2) {
+      color: chartreuse;
+    }
+  </style>
+</head>
+<body>
+  <p>lorem 0</p>
+  <div>
+    <p>lorem1</p><!-- 뒤에서 2번째 택 -->
+    <p>lorem2</p>
+  </div>
+  <div>
+    <p>lorem3</p><!-- 뒤에서 2번째 택 -->
+    <p>lorem4</p>
+  </div>
+</body>
+</html>

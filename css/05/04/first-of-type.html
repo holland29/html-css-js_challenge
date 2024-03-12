@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>first-of-type</title>
+  <!-- 
+    ! first-of-type
+    - 부모의 자식 중 맏이 요소를 선택
+  -->
+  <style>
+    p:first-of-type {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <span>span0</span>
+  <p>lorem0</p> <!-- 부모 div의 자식 p태그의 맏이 -->
+  <div>
+    <span>span1</span>
+    <p>lorem1</p> <!-- 부모 div의 자식 p태그의 맏이 -->
+  </div>
+  <span>span2</span>
+  <span>span3</span>
+  <p>lorem3</p>
+  <p>lorem4</p>
+</body>
+</html>

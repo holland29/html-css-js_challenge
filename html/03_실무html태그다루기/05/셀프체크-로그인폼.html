@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셀프체크-로그인폼</title>
+  <style>
+    * {
+      text-align: center;
+      border-style: 1px solid black;
+      /* margin-bottom: 20px; */
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    #username #password {
+      box-sizing: border-box;
+      width: 300px;
+      height: 300px;
+            
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <form action="#">
+    <fieldset>
+      <legend>
+        <!-- eng: login -->
+      </legend>
+      <button type="button">
+        log in with google
+      </button>
+    </fieldset>
+    <p>
+      or
+    </p>
+    <fieldset>
+      <legend>
+        <!-- normal -->
+      </legend>
+      <label for="username">
+        <input type="text" id="username" placeholder="Username" style="text-align: left;">
+      </label>
+      <br>
+
+      <label for="password">
+        <input type="password" id="password" placeholder="Password" style="text-align: left;">
+      </label>
+      <br>
+
+      <button type="submit">
+        LOGIN
+      </button>
+    </fieldset>
+    <a href="#">Forgot your password?</a>
+  </form>
+</body>
+</html>

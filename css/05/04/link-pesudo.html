@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>link-pesudo</title>
+  <!-- 
+    ! 가상 클래스 선택자 사용하기
+    ? 형식
+    - 기준 요소: 가상 클래스 선택자
+    
+    ? 링크 가상 클래스 선택자 활용하기
+    (1) :link
+    => 한 번도 방문한 적 없음
+    (2) :visited
+    => 한 번이라도 방문한 적 있음
+  -->
+  <style>
+    /* 한 번도 방문한 적 없음 */
+    a:link {
+      color: orangered;
+    }링크-가상선택자.png
+    /* 한 번이라도도 방문한 적 있음 */
+    a:visited {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://www.naver.com">네이버</a>
+  <a href="https://www.google.com">구글</a>
+  <img src="./링크-가상선택자.png" alt="링크-가상선택자.png">
+</body>
+</html>

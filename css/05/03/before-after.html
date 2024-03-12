@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>before-after</title>
+
+  <!-- 
+    ! 가상 요소 선택자 사용하기
+    - 마치 존재하는 것처럼 취급하여, 선택자를 지정하는 방법
+    - 앞에 ::를 붙이고, 기준 선택자와 함께 사용함
+    - 만약, 기준 선택자를 생략할 경우,
+      -전체 선택자로 취급됨
+    ? 형식
+    기준 선택자::가상 요소 선택자
+  -->
+
+  <style>
+    p::before {
+      content: '<before>';
+    }
+    p::after {
+      content: '<after>';
+    }
+
+    /* 
+    ::before 선택자 = 기준 선택자의 앞 공간
+    ::after 선택자 = 기준 선택자의 뒷 공간
+    contetn 속성
+    = 새로운 콘텐츠를 만들거나 | 추가할 때 사용  
+    = ::before, ::after 선택자 에서만 사용함
+    */
+
+    p::before {
+      content: '<before>';
+      color: blue;
+    }
+    p::after {
+      content: '<after>';
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    It has survived not only five centuries, <br>
+    but also the leap into electronic typesetting, <br>
+    remaining essentially unchanged.
+  </p>
+
+  <img src="./가상 요소 선택자.png" alt="가상 요소 선택자.png">
+
+<!-- 
+  해당 코드를 실행하면,
+  앞>> p 태그의 콘텐츠 <<뒤로 마치 어떤 요소가 있는것 처럼 선택됨
+  => before태그 p태그 콘텐츠 after태그
+  
+  그리고,
+  이를 활용하여 content 속성으로 새로운 텍스트 추가/수정 가능
+-->
+
+
+
+
+</body>
+</html>
