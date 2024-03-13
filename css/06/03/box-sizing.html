@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-sizing</title>
+  <!-- 
+    ! box-sizing
+    - width, height 속성: content 영역에 직접적 영향을 끼침
+    case1. 참조
+    * 위의 불편한 방식을 개선할 방법으로,
+    * content 영역을 제어하기 위해, => box-sizing 속성을 사용함
+    * 속성값
+    * - content-box, border-box
+    * width, height 속성의 적용 기준을 지정함 -> content 영역 제어
+    ? border-box로 지정 시,
+    * 원래 의도한 width, height 지정된 크기로 출력됨
+    * 위의 의도를 맞추기 위해 content 영역의 너비/높이가 자동 조절됨
+    ? border-box로 지정하면, 요소의 너비/높이를 다루면 편하게 제어 가능함
+  -->
+  <style>
+    /* case1. 유의 ex. */
+    /* div {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid red;
+      margin: 10px;
+    } */
+    /* 
+      case1.
+      실제 값 121.6 x 121.6
+      
+      이유1. 
+      - 웹 브라우저가 화면에 렌더링 할 때,
+        -> border, padding, content 영역의 
+          ->> height, width를 종합적으로 계산함
+      
+      이유2.
+      - 화면에 보이는 요소의 width, height 
+        -> 외부 여백 margin 영역을 제외
+        -> border, padding, content 영역을 전부 포함한 크기
+      
+      이유3.
+      - 그래서, 화면에 표시되는 width값은
+        -> border 영역 + padding 영역
+        => width 100px + padding-right/left 각 10px + border-left/right 각 1px == 122px
+        (122px == 100px + 10px + 10px + 1px + 1px)
+
+    이유4.
+    - height, width 같은 계산방식
+    */
+
+    /* case1.
+      !! 의도한 방식대로 100px로 표시하기 !!
+    */
+    /* div {
+      width: 78px;
+      height: 78px;
+      border: 1px solid blue;
+      padding: 10px;
+      margin: 10px;
+      출력값: 99.6 x 99.6 (반올림)
+    } */
+    div {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid hotpink;
+      box-sizing: border-box;
+      /* 정확한 100px 100px */
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <img style="width: 60%;" src="./width 계산방식.png">
+  <img style="width: 80%;" src="./box-sizing.png">
+</body>
+</html>

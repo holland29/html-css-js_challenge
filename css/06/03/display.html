@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+  <!-- 
+    ! display
+    * 블록
+    : 항상 1행을 다 차지함 ex. hn, p, div tag
+
+    * 인라인
+    : 요소의 너비/높이를 콘텐츠 크기만큼만 차지함
+    ex. span, a, strong
+
+    * 인라인-블록
+    : 인란인 성격처럼 -> 요소의 너비가 콘텐츠만큼 차지함
+    : 그 외 블록 성격을 가짐 ->> 복합적 성격
+    ex. img 태그 사용
+      -> 웹의 수평 공간이 남아있으면, 1줄로 배치됨
+
+    * 블록 vs 인라인 vs 인라인-블록
+    - 박스 모델은 3가지 성격을 가짐
+    - 블록, 인라인-블록: 너비/높이/마진/패딩 속성이 전부 적용o
+    - 인라인
+      : 너비/높이(x) 
+      : 각각 padding, margin-left, right 방향만 적용(o)
+      ex. span tag의 width/height 적용(x)
+      ex. span tag의 margin, padding-top,bottom 적용(x)
+
+    ? display 속성
+    - 속성값
+    : block, inline, inline-block 사용
+  -->
+  <style>
+    h1, h2 {
+      /* display: block; */
+      display: inline;
+    }
+    a {
+      display: inline-block;
+    }
+    img {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>h1</h1>
+  <h2>h2</h2>
+  <a href="#">a태그</a>
+  <img src="./cat-2536662_640.jpg">
+</body>
+</html>

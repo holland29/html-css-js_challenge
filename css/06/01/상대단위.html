@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상대단위</title>
+  <!-- 
+    1. 절대 단위px
+      - css의 기본값
+    2. 상대 단위    
+  -->
+  <style>
+    html {
+      font-size: 1rem;
+    }
+    .parent {
+      font-size: 16px;
+      font-size: 1rem;
+      /* 16px * 1rem = 16px */
+      font-size: 1vw;
+      /* 900px * 1/100 = 9px */
+      font-size: 1vh;
+      /* 400px * 1/100 = 4px */
+    }
+    .child {
+      font-size: 80%;
+      /* 16px * 0.8 = 12.8px */
+      font-size: 2em;
+      /* 16px * 2em = 32px */
+      font-size: 2rem;
+      /* 16px * 2em = 32px */
+      font-size: 2vw;
+      /* 900px * 2/100 = 18px */
+      font-size: 2vh;
+      /* 400px * 2/100 = 8px */
+    }
+    .child-to-child {
+      font-size: 80%;
+      /* 12.8px * 0.8 = 10.24px  */
+      font-size: 2em;
+      /* 32px * em = 64px */
+    }
+  </style>
+</head>
+<body>
+  <img src="./상대단위.png" alt="상대단위.png">
+  <ul>
+    <li>
+      % 부모 요소의 속성값에 따라 상대적인 크기를 가짐 <br>
+      ex. 부모 80% -(상속)> 자식 80% 
+    </li>
+    <li>
+      em 부모 요소의 크기를 기준으로, 상대적인 크기를 가짐 <br>
+      - %: 사용되는 속성에 따라 기준이 달라짐
+      - em: 오직 텍스트 크기를 기준으로 함
+      ex. 2em(기준) -> 자식 요소 크기 = 부모 요소 속성값 x 2배
+    </li>
+    <li>
+      rem <br>
+      - html 텍스트 크기에 대항 상대적인 값 <br>
+      - 1rem = html 텍스트 크기 x 1배
+      - 현대 html 텍스트 크기 = 16px
+    </li>
+    <li>
+
+    </li>
+    <li>
+
+    </li>
+    <li>
+
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>색상표기법</title>
+  <!-- 
+    1. rgb 표기법
+      - rgb (낮은 색0 ~ 255 높은 색)
+      - rgba (a=alpha=투명도)
+        - alpha 표기법
+        : 0 ~ 1 사이의 소수점 표기
+        : 0 생략 가능
+    
+    !2. hex 표기법 = 16진수 표기법
+      - #RRGGBB
+      - 16진수 변환 -> 00 ~ ff로 표기함
+      - 낮은 값 00 ~ ff 높은 값
+      ? 실무에서 가장 많이 사용함
+      - #ff0000 #f00 #00ff00 #335533 #353 #0000ff 
+  -->
+  <style>
+    h1 {
+      color: rgb(255,0,0);
+    }
+    h2{
+      color: rgb(0,255,0);
+    }
+  </style>
+</head>
+<body>
+  <h1>rgb(red green blue)</h1>
+  <h2>rgba(red green blue alpha)</h2>
+</body>
+</html>

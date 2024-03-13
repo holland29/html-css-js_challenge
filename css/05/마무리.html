@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 선택자 다루기 마무리</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div>
+    <p class="no1">
+      - 선택자: css 속성을 적용할 대상 선택
+    </p>
+    <p class="no2">
+      <ol>
+        <li>전체-selector(*)</li>
+        <li>tag-selector</li>
+        <li>id-selector</li>
+        <li>class-selector</li>
+        <li>기본 속성-selector</li>
+        <li>문자열 속성-selector</li>
+      </ol>
+    </p>
+    <p class="no3">
+      <ol>
+        <li>
+          그룹 선택자: 여러 선택자를 , 기호로 구분하여 그룹화
+        </li>
+        <li>
+          자식 선택자: 자식관계 범위로, >기호 사용
+        </li>
+        <li>
+          하위 선택자: 자식 및 자손관계 범위, 공백으로 구분
+        </li>
+        <li>
+          인접 형제 선택자 <br>
+          - 특정 태그의 가장 인접한 형제관계 <br>
+          - + 기호 구분
+        </li>
+        <li>
+          일반 형제 선택자 <br>
+          - 특정 태그의 형제 관계의 모든 태그를 선택자로 택 <br>
+          - ~ 기호를 구분자로 사용
+        </li>
+      </ol>
+    </p>
+    <p class="no4">
+      <h3>가상 요소 선택자</h3>
+      - 가상으로 존재하는 선택자를 택 (실존x) <br>
+      - ::(클론 2개) 가상 요소 앞에 붙임 <br>
+      ex.
+      <ul>
+        <li>::before: 요소의 맨 앞</li>
+        <li>::after: 요소의 맨 뒤</li>
+      </ul>
+    </p>  
+    <p class="no5">
+      <h3>가상 클래스 선택자</h3>
+      - 요소의 상태를 이용해 선택자를 지정하는 방법 <br>
+      - :(클론 1개) 가상 클래스 선택자 앞에 붙임 <br>
+      <ol>
+        <li>
+          링크
+          <ul>
+            <li>:link</li>
+            <li>:visited</li>
+          </ul>
+        </li>
+        <li>
+          동적
+          <ul>
+            <li>:hover</li>
+            <li>:active</li>
+          </ul>
+        </li>
+        <li>
+          입력 요소
+          <ul>
+            <li>:focus</li>
+            <li>:checked</li>
+            <li>:disabled</li>
+            <li>:enbled</li>
+          </ul>
+        </li>
+        <li>
+          구조적
+          <ul>
+            <li>
+              맏이 :fitst-child <br>
+              막내 :last-child
+            </li>
+            <li>
+              n번째 자식의 끝 :nth-child(n) <br>
+              끝에서 n번째 자식 :nth-last-child(n)
+            </li>
+            <li>
+              n번째 특정 자식 :nth-of-type(n) <br>
+              끝에서 n번째 특정 자식 :nth-last-of-type(n)
+            </li>
+            <li>
+              부모의 맏이의 특정 자식 :fist-of-type
+              부모의 막내의 특정 자식 :last-of-type
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </p>
+  </div>
+</body>
+</html>
