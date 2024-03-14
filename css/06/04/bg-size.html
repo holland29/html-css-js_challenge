@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg-size</title>
+  <!-- 
+    ! bg-size
+    - 이미지 크기 지정
+    - 속성값: auto, cover, contain 및 직접 지정
+      -> cover
+      : 비율 유지
+      : 너비/높이 충족 시 이미지 일부가 잘림
+      ->> contain
+      : 비율 유지, 배경요소에 가득 참
+      : 너비/높이 한쪽이라도 full 충족 시, 그 상태에서 멈춤
+      : 못 채운 여백은 이미지 반복으로 채움
+  -->
+  <style>
+    div {
+      /* 원본 1/2 크기 */
+      width: 320px;
+      height: 230px;
+      background-image: url(./puppy-1207816_640.jpg);
+      background-size: 320px 230px;
+    }
+  </style>
+</head>
+<body>
+  <img src="./bg-size.png">
+  <div></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>relative</title>
+  <!-- 
+    ! position: relative;
+      - position: relative;
+      - 좌표 속성에 따라 배치 가능
+      - 속성명: top, bottom, left, right
+      * 좌표계
+        -> x축, y축, z축 => (0, 0, 0)
+        
+  -->
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+    }    
+    .red-box {
+      background-color: red;
+    }
+    .green-box {
+      background-color: green;
+      position: relative;
+      left: 100px;
+      /* 왼쪽 모서리 기준, y축 아래로 100px 밀려남 */
+      top: 100px;
+    }
+    .blue-box {
+      background-color: blue;
+    }    
+  </style>
+</head>
+<body>
+
+  <img 
+    style="width: 50%;" 
+    src="./css좌표계.png" 
+    alt="css좌표계.png">
+
+  <img src="./relative 기본값.png" alt="relative 기본값.png">
+
+  <br><br><hr>
+
+  <div class="box red-box"></div>
+  <div class="box green-box">relative</div>
+  <div class="box blue-box"></div>
+</body>
+</html>

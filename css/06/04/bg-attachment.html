@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg-attachment</title>
+  <!-- 
+    ! bg-attachment
+    - 요소에 삽입된 이미지 스크롤
+    - 이미지의 자동 방식 결정
+  -->
+  <style>
+    /* 
+    << size >>
+      .children의 height > .parent(img 삽입)
+      => border 안에 스크롤바 형성
+    */
+    body {
+      height: 1000px;
+    }
+    .parent {
+      width: 320px;
+      height: 240px;
+      border: 1px solid blue;
+      overflow: scroll;
+    }
+    .children {
+      height: 2000px;
+      background-image: url(./coffee.jpg);
+      background-attachment: scroll;
+      /* background-attachment: fixed; */
+      /* background-attachment: local; */
+    }
+  </style>
+</head>
+<body>
+  <img src="./bg-attachment.png">
+  
+  <br><br><hr>
+
+  <div class="parent">
+    <div class="children"></div>
+  </div>
+</body>
+</html>

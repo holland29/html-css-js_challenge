@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sticky</title>
+  <!-- 
+    ! sticky
+    - 스크롤 하는 중, 임계점이 되면 -> 요소가 fixed처럼 작동함
+  -->
+  <style>
+    body {
+      margin: 0;
+      height: 4000px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }    
+    .red-box {
+      background-color: red;
+    }
+    .green-box {
+      background-color: green;
+      position: sticky;
+      top: 0;
+      /* 
+        - 요소들이 static값과 유사하게 표시됨
+        - 그러나, 초록 박스는 top: 0; 위치에 고정됨
+      */
+    }
+    .blue-box {
+      background-color: blue;
+    }  
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box">sticky</div>
+  <div class="box blue-box"></div>
+</body>
+</html>

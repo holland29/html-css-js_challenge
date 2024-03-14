@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg속성</title>
+  <!-- 
+    ! bg속성 한 번에 지정하기
+    !! 실무에서 권장되지 않음 주의 !!
+    - 앞의 속성을 한 번에 지정할 수 있다
+    - 순서x
+    * 주의사항
+    (1) bg-position(선 작성)
+    (2) /(슬래쉬 구분) 
+    (3) bg-size 속성 사용 가능
+  -->
+  <!-- 
+    ex.
+    bg-color img repeat position/size attachment
+  -->
+  <style>
+    /* div {
+      background-color: pink;
+      background-image: url(./coffee.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+    } */
+    div {
+      background: pink url(./coffee.jpg) no-repeat center/100% 100%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="./coffee.jpg" alt="">
+  </div>
+</body>
+</html>

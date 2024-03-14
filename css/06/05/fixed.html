@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fixed</title>
+  <!-- 
+    ! fixed
+    - 해당 요소는 지정된 위치에 고정됨
+    - absolute와 유사 <-> 스크롤 시, 차이점
+  -->
+  <style>
+    body {
+      margin: 0;
+      height: 4000px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }    
+    .red-box {
+      background-color: red;
+    }
+    .green-box {
+      background-color: green;
+      position: fixed;
+      left: 100px;
+    }
+    .blue-box {
+      background-color: blue;
+    }   
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box">fixed</div>
+  <div class="box blue-box"></div>
+</body>
+</html>

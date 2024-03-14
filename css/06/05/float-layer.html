@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float-layer</title>
+  <!-- 
+    ! float-layer
+    * float 
+    - (공중에) 뜨다 부유하다
+    - 공중에 띄워서 다음에 올 요소를 주변에 자연스럽게 배치할 용도
+    - 요소를 화면에 배치하는 또 다른 방법
+    
+    * 이미지 요소, 텍스트 요소 배치하기
+    
+    * 블록 성격의 요소를 -> 인라인 성격 요소처럼 배치하기
+  -->
+  <style>
+    div {
+      color: white;
+      /* 
+        div 속성
+        - width 따로 부여x
+        - 각 1행을 다 차지
+      */
+    }
+    .red-box {
+      background-color: red;
+      float: left;
+      /* 
+        red-box가 blue-box 아래에 깔림
+      */
+    }
+    .blue-box {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="red-box">red</div>
+  <div class="blue-box">blue</div>
+</body>
+</html>

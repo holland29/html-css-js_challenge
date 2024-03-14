@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg-position</title>
+  <!-- 
+    ! bg-position
+    - 삽입할 이미지 위치 지정
+    - 속성값
+      -> 1개: 지정값 = x축, y축 = 기본 center
+      ->> 2개: 각각 x축, y축
+  -->
+  <style>
+    div {
+      /* 원본 2배 */
+      /* 
+        이미지 반복x
+        x축 값: 100%, y축: 자동 center
+        * 100%
+        ->> x축(가장 우측), y축(가장 아래)
+      */
+      width: 1280px;
+      height: 920px;
+      border: 1px solid red;
+      background-image: url(./puppy-1207816_640.jpg);
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
+    /* 
+      background-position 속성 대신,
+      background-size: cover;
+      - 가로, 세로 비율 유지
+      - 요소의 배경을 full 확대할 때까지, 이미지를 확대
+      => bg-position: center; 와 유사한 정중앙 위치 효과를 줌
+    */
+  </style>
+</head>
+<body>
+  <img src="./bg-position.png"> <br><br>
+  <div></div>
+</body>
+</html>

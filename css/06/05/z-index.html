@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z-index</title>
+  <!-- 
+    ! z-index
+    - 배치한 요소의 z축 위치를 지정
+    - 속성값: 1개의 정수값
+    - position은 기본적으로 좌표 속성에 따라 요소 배치
+    - 만약, 요소가 겹친다면? (아래 코드 참조)
+
+    * notice
+    - 요소를 원하는 위치에 배치하고 싶을 때 유용한 position 속성
+    - 하지만, 
+      !! 모든 요소는 기본 흐름을 최대한 유지할 것!!
+  -->
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .red-box {
+      background-color: red;
+      position: relative;
+      z-index: 10;
+      /* 
+        - 빨간색 요소 위에서 표시
+        !! position 속성은, 나중에 작성되는 요소가 앞에서 표시된다
+        - 만약, 요소의 앞뒤 순서를 바꾸고 싶다면?
+          -> z축 값을 지정하는 z-index 속성 활용
+          -> 속성값의 숫자가 클수록, 요소가 더 앞쪽에 배치됨
+          -> z-index: 0; 보다 큰 숫자로 설정
+      */
+    }
+    .green-box {
+      background-color: green;
+      position: absolute;
+      left: 0;
+      top: 0;      
+    }
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+</body>
+</html>

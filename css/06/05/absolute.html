@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>absolute</title>
+  <!-- 
+    ! absolute
+    - relative와 동일하게 
+      -> 기본흐름x, 좌표 속성에 따라 지정됨
+    * 기준점이 다름
+      -> relative 요소의 왼쪽 윗 모서리
+      -> absolute 웹 브라우저 왼쪽 윗 모서리
+    * 웹 브라우저 기본 스타일 시트 margin: 0px;
+      -> relative.html
+      : 웹 브라우저와 요소 사이에 여백 존재
+      -> absolute
+      : 웹 브라우저
+  -->
+  <style>
+    body {
+      margin: 0;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+    }    
+    .red-box {
+      background-color: red;
+    }
+    .green-box {
+      background-color: green;
+      position: absolute;
+      /* 
+        relative 경우,
+        -> 요소가 이동하더라도, 원래 위치를 유지함(빈자리 차지x)
+
+        absolute 경우,
+        -> 요소를 움직이면, 빈 공간으로 인식하여
+        -> 다른 요소가 빈 자리를 차지한다        
+      */      
+      left: 100px;
+      top: 100px;
+      /* 
+        => position: top | bottom; 속성을 부여하지 않으면,
+          -> 원위치 x축(가로) 방향으로만 움직임
+        => top 속성이 적용됨
+          -> 기준점이 아래로 바뀜
+      */
+    }
+    .blue-box {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box">absolute</div>
+  <div class="box blue-box"></div>
+</body>
+</html>
