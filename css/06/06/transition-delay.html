@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition-delay</title>
+  <!-- 
+    ! transition-delay
+    - 전환 효과 발생을 지연시킴
+    - 속성값: 지연하고 싶은 시간;
+  -->
+  <style>
+    .red-box{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition-property: background-color, color, width;
+      transition-duration: 3s;
+      transition-delay: 500ms;
+    }
+    .red-box:hover{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="red-box"></div>
+</body>
+</html>

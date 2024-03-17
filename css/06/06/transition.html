@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition</title>
+  <!-- 
+    ! transition
+    ? 전환
+    - css 적용된 스타일 속성값을, 다른 속성값으로 변환하는 것
+  -->
+  <style>
+    .red-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    .red-box:hover {
+      background-color: yellow
+      /* 
+        hover 특성 상, 마우스를 올리면 노란색으로 변한된다
+        = 원래 빨간색 -> 노란색으로 전환됨
+      */
+    }
+  </style>
+</head>
+<body>
+  <div class="red-box"></div>
+</body>
+</html>

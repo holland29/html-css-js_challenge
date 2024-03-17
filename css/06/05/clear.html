@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clear</title>
+  <!-- 
+    ! clear
+    - float 속성 해제할 때 사용
+      : float 문제점의 원인은, 다음 요소에 영향을 끼치기 때문
+      따라서, 영향을 주지 않도록 float 속성 해제가 필요하다
+  -->
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .red-box {
+      background-color: red;
+      float: left;
+    }
+    .green-box {
+      background-color: green;
+      float: left;
+    }
+    .blue-box {
+      background-color: blue;
+      /* 
+        float 미사용
+        -> 빨간색 밑에 깔려버림
+        -> float 속성이 적용된 요소는, 자신의 위치를 보장받지 못함
+        
+        파란색 박스가 눈에 보일려면?
+        -> float 속성 해제가 필요
+        -> clear 속성 적용, float와 동일한 방향 적용
+        => clear-solved-1.html 적용
+      */
+    }
+  </style>
+</head>
+<body>
+  <img src="./clear속성.png"> <br><hr><br>
+
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+  <div class="box blue-box"></div>
+</body>
+</html>

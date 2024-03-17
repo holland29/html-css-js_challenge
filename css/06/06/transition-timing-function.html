@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition-timing-function</title>
+  <!-- 
+    ! transition-timing-function
+    - 전환 효과의 진행 속도 지정
+    - 속성값: 키워드, cubic-bezier()
+
+    ? 크롬에서 함수 속도 조절하기
+    - 개발자 도구
+    (1) 속성이 적용된 요소 선택
+    (2) 그림의 보라색 아이콘 클릭 
+      -> 사용자 직접 곡선 조정 가능
+    (3) 전환 효과, 완료까지 소요 시간, 결과 미릭보기 가능
+    (4) 위의 원하는 효과를 조정하면, 
+      -> 곡선 아래 cubic-benzier()값이 보임
+    (5) 해당 값을 복사해서 속성값으로 기입한다
+
+    ? 외부 사이트 https://cubic-benzier.com
+    - 위의 사이트에 접속
+    - 곡선을 조정하면, cubic-benzier() 값 확인 가능
+  -->
+  <style>
+    .container {
+      padding:10px;
+      color:white;
+      border:1px solid black;
+    }
+    .bar {
+      width:100px;
+      background-color:red;
+      transition-property:width;
+      transition-duration:1s;
+      margin-bottom:10px;
+    }
+    .container:hover .bar {
+      width:200px;
+    }
+    .bar:nth-child(1) {
+      transition-timing-function:linear;
+    }
+    .bar:nth-child(2) {
+      transition-timing-function:ease;
+    }
+    .bar:nth-child(3) {
+      transition-timing-function:ease-in
+    }
+    .bar:nth-child(4) {
+      transition-timing-function:ease-out;
+    }
+    .bar:nth-child(5) {
+      transition-timing-function:ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <img src="./transition-timing-function.png"> <br>
+
+  <div class="container">
+    <div class="bar">linear</div>
+    <div class="bar">ease</div>
+    <div class="bar">ease-in</div>
+    <div class="bar">ease-out</div>
+    <div class="bar">ease-in-out</div>    
+  </div>
+  </div>
+</body>
+</html>

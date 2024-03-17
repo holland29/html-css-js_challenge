@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clear-solved-1</title>
+  <!-- 
+    ! clear-solved-1.html
+  -->
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .red-box {
+      background-color: red;
+      float: left;
+    }
+    .green-box {
+      background-color: green;
+      float: left;
+    }
+    .blue-box {
+      background-color: blue;
+      clear: left;
+      /* 
+        clear 속성 적용 시,
+        -> 다른 요소(float가 적용된)의 영향을 받지 않아서,
+          => 정상적으로 표시됨
+      */
+    }
+  </style>
+</head>
+<body>
+  <div class="box red-box"></div>
+  <div class="box green-box"></div>
+  <div class="box blue-box"></div>
+</body>
+</html>

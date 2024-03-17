@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation-duration</title>
+  <!-- 
+    ! animation-duration
+    - 애니메이션을 지속할 시간을 설정
+    - 속성값: s(초) | ms(밀리초) 단위의 시간 기입
+
+    ? animation 속성은, 1번 실행된 후에는 초기 상태로 돌아간다
+
+    * 애니메이션 필수 속성 3가지
+      -> 키 프레임, -name, -duration 효과 적용 가능o
+      -> 위의 3가지 중, 1개라도 누락되면 효과 적용x
+
+  -->
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      animation-name: bgchange;
+      animation-duration: 5s;
+    }
+    @keyframes bgchange {
+      0% {background-color: red;}
+      25% {background-color: orange;}
+      50% {background-color: green;}
+      100% {background-color: hotpink;}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

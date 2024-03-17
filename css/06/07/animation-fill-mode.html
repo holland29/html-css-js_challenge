@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation-fill-mode</title>
+  <!-- 
+    ! animation-fill-mode
+    - 애니메이션이 종료된 상태를 유지하고 싶을 때 사용
+    * forwards
+      -> 종료 상태를 유지시키는 속성값
+  -->
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      animation-name: bgchange;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes bgchange {
+      0% {background-color: blue;}
+      25% {background-color: yellow;}
+      50% {background-color: violet;}
+      100% {background-color: aqua;}
+    }
+  </style>
+</head>
+<body>
+  <img src="./animation-fill-mode.png"> <br>
+
+  <div></div>
+</body>
+</html>

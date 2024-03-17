@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation-play-state</title>
+  <!-- 
+    ! animation-play-state
+    - 애니메이션의 재생 상태 지정
+    <-> 전환 효과 속성과 상이함
+      -> 애니메이션: 일시정지, re재생 => js 필요
+  -->
+  <style>
+    div{
+      width:100px;
+      height:100px;
+      background-color:red;
+      position:relative;
+      animation-name:move;
+      animation-duration:10s;
+      animation-fill-mode:forwards;
+      animation-play-state:paused;
+    }
+    @keyframes move{
+      from{
+        left:0;
+      }
+      to{
+        left:300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="./animation-play-state.png"> <br><hr><br>
+
+  <div></div>
+  <button id="start">start</button>
+  <button id="paused">paused</button>
+
+  <!-- js section -->
+  <script>
+    const box = document.querySelector("div");
+    document.getElementById("start").addEventListener("click", function(){
+      box.style.animationPlayState = "running";
+    });
+    document.getElementById("paused").addEventListener("click", function(){
+      box.style.animationPlayState = "paused";
+    })
+  </script>
+</body>
+</html>

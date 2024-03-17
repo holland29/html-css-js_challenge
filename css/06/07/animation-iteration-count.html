@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation-iteration-count</title>
+  <!-- 
+    ! animation-iteration-count
+    - 애니메이션은 기본 1회 실행 후 종료된다
+    - 해당 속성을 사용하면, 실행 횟수 조절 가능
+  -->
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      /* background-color: red; */
+      animation-name: bgchange;
+      animation-duration: 6s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 3;
+    }
+    @keyframes bgchange {
+      0% {background-color: red;}
+      25% {background-color: yellow;}
+      50% {background-color: blue;}
+      100% {background-color: violet;}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
