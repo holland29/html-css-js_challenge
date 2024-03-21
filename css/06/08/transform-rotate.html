@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-rotate</title>
+  <!-- 
+    ! transform-rotate
+  -->
+  <style>
+    .container {
+      border: 3px solid red;
+      display: inline-block;
+      margin: 20px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: greenyellow;
+    }
+    .box:hover {
+      /* 요소가 오른쪽 30도 회전 */
+      transform: rotate(30deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-origin</title>
+  <!-- 
+    ! transform-origin
+    - rotate()
+    : 요소가 회전할 때, 요소의 중심을 기준으로 회전
+    : 기본적으로 변형 속성값들은 시작(기준점)이 있음
+
+    * transform-origin
+    - 변형 기준점 변경하기
+  -->
+  <style>
+    .container {
+      border: 3px solid red;
+      display: inline-block;
+      margin: 50px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: greenyellow;
+    }
+    .box:hover {
+      /* 오른쪽 30도 회전 */
+      transform: rotate(30deg);
+      /* 오른쪽 위 모서리 기준점 지정 */
+      transform-origin: top right;
+    }
+  </style>
+</head>
+<body>
+  <img src="./transform-origin.png"> <br><hr><br>
+
+  <div class="container">
+    <div class="box"></div>
+  </div>
+</body> 
+</html>

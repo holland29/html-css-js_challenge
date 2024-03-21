@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-translate</title>
+  <!-- 
+    ! transform-translate
+    * 2차원 좌표 이동하기
+    - translate() 함수
+    - 요소를 현재 위치에서 일정 거리만큼 이동하고 싶을 때 사용
+    -> x축, y축, 2방향 동시에 이동
+    -> 1방향만 움직일 때, 각 translate() | tranlateY() 함수 사용
+    -> 양수
+      : x축 오른쪽, y축 아래쪽
+    -> 음수
+      : x축 왼쪽, y축 위쪽
+  -->
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    div:hover {
+      /* 오른쪽 100px, 아래쪽 200px 이동 */
+      transform:translate(100px, 200px);
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

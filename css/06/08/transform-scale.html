@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-scale</title>
+  <!-- 
+    ! transform-scale
+    - scaleX() 함수는, x축 방향으로 확대/축소
+    - 0 < 숫자설정 > 1의 경우, 요소의 크기 축소
+    -> 양수
+      : x축 오른쪽, y축 아래쪽
+    -> 음수
+      : x축 왼쪽, y축 위쪽
+  -->
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      opacity: 0.33;
+    }
+    div:hover {
+      background-color: yellow;
+      opacity: 1;
+      /* x축 방향으로 2배 확대 */
+      /* transform: scaleX(2); */
+      
+      /* y축 방향으로 0.2배 축소 */
+      transform: scaleY(0.2);
+
+      /* x축, y축 동시에 2배 확대 */
+      /* transform: scale(2, 2); */
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

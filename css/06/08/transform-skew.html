@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform-skew</title>
+  <!-- 
+    ! transform-skew
+    - 2차원 기울이기
+    - 요소를 기울일 때 쓰는 함수
+    - skew(숫자 + deg)
+      -> 음수: 양수의 반대 방향
+      -> x축, y축 방향을 한 번에 지정
+      -> 한 쪽으로만 기울일 경우,
+        : skewX(), skewY() 함수 사용
+  -->
+  <style>
+    div {
+      margin: 50px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    div:hover {
+      /* transform: skew(30deg, 30deg); */
+      /* transform: skew(-30deg, -30deg); */
+      /* transform: skewX(15deg); */
+      transform: skewY(25deg);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
